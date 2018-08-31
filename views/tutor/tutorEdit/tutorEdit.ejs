@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="/editTutor/<%= teacher.id %>" method="post">
+      Name: <br>
+      <input type="text" name="Name" value="<%= tutor.name%>"><br>
+      Gender: <br>
+      <input type="text" name="gender" value="<%= tutor.gender%>"><br>
+      Address: <br>
+      <input type="text" name="address" value="<%= tutor.address%>"><br>
+      Phone Number: <br>
+      <input type="text" name="phoneNumber" value="<%= tutor.phoneNumber%>"><br>
+      Email: <br>
+      <input type="text" name="email" value="<%= tutor.email%>"><br>
+      Password: <br>
+      <input type="text" name="password" value="<%= tutor.password%>"><br>
+      <label>Input Subject</label>
+      <select name="subject">
+        <% subjects.forEach(function(subject) { %>
+          <option value="<%=subject.subjectName%>"> <%=subject.subjectName%> </option>
+        <%})%>
+      </select>
+      <input type="submit" value="Edit">
+    </form>
+  </body>
+</html>

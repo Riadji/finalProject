@@ -1,0 +1,103 @@
+<%- include('../header/header.ejs') -%>
+
+<div class="invoice" style="margin: 0 auto;">
+    <div class="container">
+        <h1>PAYMENT</h1>
+
+        <div>
+            <form action="/payment" method="POST">
+                <input type="text" name="idTutor" value="<%= tutor.id %>" style="display: none;">
+                <input type="text" name="idStudent" value="<%= user.id %>" style="display: none;">
+                <input type="text" name="price" value="<%= price %>" style="display: none;">
+                <input type="text" name="scheduleTime" value="<%= scheduleTime %>" style="display: none;">
+                <input type="submit" value="Payment" class="btn btn-primary">
+                
+                <a href="/<%= tutor.id %>/preview-tutors">
+                    <button type="button" class="btn btn-primary">Back</button>
+                </a>
+            </form>
+        </div>
+
+        <table class="table table-striped" style="width: 500px; text-align: left">
+            <tr>Order From
+                <td>Name</td>
+                <td>
+                    <%= user.name %>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <%= user.gender %>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <%= user.gender %>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <%= user.address %>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>
+                    <%= user.phoneNumber %>
+                </td>
+            </tr>
+        </table>
+
+        <table class="table table-striped" style="width: 500px;">
+
+            <tr>To
+                <td>Name</td>
+                <td>
+                    <%= tutor.name %>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <%= user.gender %>
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <%= tutor.City.cityName %>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>
+                    <%= tutor.phoneNumber %>
+                </td>
+            </tr>
+        </table>
+
+        <table class="table table-striped" style="width: 500px;">
+            <tr>
+                <td><%= tutor.Subject.subjectName%></td>
+                <td></td>
+            </tr>
+            <% tutor.Schedules.forEach( schedule => { %>
+                <tr>
+                <% for(let i = 0; i < scheduleTime.length; i++) { %>
+                    <% if(schedule.id == scheduleTime[i]){ %>
+                        <td><%= schedule.date %><td>
+                    <%}%>
+                <% } %>
+                </tr>
+            <% }) %>
+            <tr>
+                <td>Price</td>
+                <td><%= price %></td>
+            </tr>
+        </table>
+    </div>
+
+</div>

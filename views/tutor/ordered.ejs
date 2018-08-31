@@ -1,0 +1,29 @@
+<%- include('../header/headerTutor.ejs') -%>
+
+    <div class="container" style="margin-top: 20px;">
+
+        <% tutor.Invoices.forEach( invoice => { %>
+            <% students.forEach( student => { %>
+                <% if(student.id == invoice.StudentId) { %>
+                <div class="card" style="width: 18rem; float: left; margin-right: 2%; height: 250px;">
+                    <div class="card-body">
+                        <p><%= `Name     : ${student.name}` %></p>
+                        <p><%= `Address  : ${student.address}` %></p>
+                        <p><%= `Order    : ${dateConverter(invoice.createdAt)}` %></p>
+                        <p><%= `price    : ${invoice.price}` %></p>
+                        <% if(invoice.alert == false) { %>
+                            <a href="/tutors/ordered/<%= invoice.id %>/completed">
+                                <button type="button" class="btn btn-primary btn-sm">Accept</button>
+                            </a>
+                        <% } %>
+                    </div>
+                </div> 
+                <% }%>
+            <% }) %>
+        <% }) %>   
+
+    </div>
+</body>
+<script src="/custom/jquery/jquery.min.js"></script>
+<script src="/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+</html>

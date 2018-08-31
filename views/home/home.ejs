@@ -1,0 +1,103 @@
+<%- include('../header/header.ejs') -%>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="my-4">
+            <small>Filter</small>
+        </h1>
+
+        <div class="filterTutor" style="margin: 20px;">
+            <form action="/filter">
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">Subject</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="SubjectId">
+                        <% subjects.forEach( subcjet => { %>
+                            <option value="<%= subcjet.id %>"><%= subcjet.subjectName%></option>
+                        <% }) %>
+                    </select>
+                    </div>
+
+                    <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">Gender</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    </div>
+
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="inlineFormCustomSelect">City</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="CityId">
+                            <% cities.forEach( city => { %>
+                                <option value="<%= city.id %>"><%= city.cityName %></option>
+                            <% }) %>
+                        </select>
+                        </div>
+
+
+                    <div class="col-auto my-1" style="padding-top:30px;">
+                        <button type="submit" class="btn btn-primary">Filter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+
+            <% tutors.forEach( tutor => { %>
+                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x600" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+
+                                    <% if(tutor.Subject != null) { %>
+                                        <span style="color:lightblue"><%= tutor.Subject.subjectName %></span>
+                                    <%}%>
+
+                                </h4>
+                                <div class="profileTutor">
+                                   
+                                    <table>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td><%= tutor.name %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gender</td>
+                                            <td><%= tutor.gender %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>City</td>
+                                            <td><%= tutor.City.cityName %></td>
+                                        </tr>
+                                    </table> 
+                                    
+                                    <div class="actionButton">
+                                        <a href="/<%= tutor.id %>/preview-tutors">
+                                            <button type="button" class="btn btn-primary btn-sm btn-block">Preview</button>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <% }) %>
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/custom/jquery/jquery.min.js"></script>
+    <script src="/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>

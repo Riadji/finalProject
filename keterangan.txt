@@ -1,0 +1,4 @@
+tutor  	 => city 	: one to many
+schedule => tutor 	: many to many
+tutor 	 => subject : one to many
+	

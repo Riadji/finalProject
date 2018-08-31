@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Schedules</h1>
+    <% schedules.forEach(function(schedule){ %>
+      <input type="checkbox" name="<%=schedule.date%>" value="<%=schedule.date%>"> <%=schedule.date%><br>
+    <% }) %>
+    <div class="form-group">
+      <button type="addSchedule" value="addSchedule" class="btn btn-primary">Add Schedules</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+
+      .title {
+        color: grey;
+        font-size: 18px;
+      }
+
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+
+      button:hover, a:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2 style="text-align:center">User Profile Card</h2>
+
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h1>John Doe</h1>
+      <p class="title">CEO & Founder, Example</p>
+      <p>Harvard University</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+     </div>
+     <div class="container">
+       <form action="/tutor/:" method="post">
+         <div class="form-row">
+           <div class="form-group col-md-6">
+             <label for="inputCity">Input City</label>
+             <select for="inputCity" name="city" id="inputCity" class="form-control">
+               <% cities.forEach(function(city) { %>
+                 <option value="<%=city.cityName%>"> <%=city.cityName%> </option>
+               <%})%>
+             </select>
+             <label for="inputSubject">Input Subject</label>
+             <select for="inputSubject" name="subject" id="inputSubject" class="form-control">
+               <% subjects.forEach(function(subject) { %>
+                 <option value="<%=subject.subjectName%>"> <%=subject.subjectName%> </option>
+               <%})%>
+             </select>
+             </div>
+           </div>
+           <div class="">
+             <a href="">Edit</a><br>
+             <a href="/tutors/<%=tutor.id%>/addSchedule">Add Schedules</a>
+           </div>
+           <div class="form-group">
+             <button type="Add" value="Add" class="btn btn-primary">Add City And Subject</button>
+           </div>
+       </form>
+     </div>
+    </div>
+    <div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

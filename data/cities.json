@@ -1,0 +1,25 @@
+[{
+    "cityName": "Jakarta Pusat",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "cityName": "Jakarta Utara",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ {
+    "cityName": "Jakarta Timur",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ {
+    "cityName": "Jakarta Selatan",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ {
+    "cityName": "Jakarta Barat",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ }
+]

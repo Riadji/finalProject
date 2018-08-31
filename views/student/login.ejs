@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <style>
+
+        body {
+            padding-top:50px;
+        }
+        fieldset {
+            border: thin solid #ccc; 
+            border-radius: 4px;
+            padding: 20px;
+            padding-left: 40px;
+            background: #fbfbfb;
+        }
+        legend {
+        color: #678;
+        }
+        .form-control {
+            width: 95%;
+        }
+        label small {
+            color: #678 !important;
+        }
+        span.req {
+            color:maroon;
+            font-size: 112%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="/students/signup">SIGN UP</a>
+
+        <h1>FORM LOGIN</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form action="/students/login" method="post" id="fileForm" role="form">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="phonenumber"><span class="req">* </span> Email </label>
+                            <input type="text" name="email" id="phone" class="form-control phone" maxlength="28" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname"><span class="req">* </span> Password </label>
+                            <input class="form-control" type="text" name="password" id="txt" />
+                            <div id="errLast"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit" name="submit_reg" value="Register">
+                        </div>
+                    </fieldset>
+                </form><!-- ends register form -->
+
+            </div>
+        </div>
+
+        <!-- <form action="/students/login" method="POST">
+            <input type="text" placeholder="Email" name="email">
+            <input type="text" placeholder="Password" name="password">
+            <input type="submit" value="Login In">
+        </form> -->
+
+</body>
+
+</html>

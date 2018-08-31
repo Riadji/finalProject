@@ -1,0 +1,98 @@
+[{
+    "date": "Senin, 10.00 AM - 12.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Senin, 02.00 PM - 04.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Senin, 07.00 PM - 09.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ 
+ {
+    "date": "Selasa, 10.00 AM - 12.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Selasa, 02.00 PM - 02.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Selasa, 07.00 PM - 09.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ 
+ {
+    "date": "Rabu, 10.00 AM - 12.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Rabu, 02.00 PM - 04.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Rabu, 07.00 PM - 09.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ 
+ {
+    "date": "Kamis, 10.00 PM - 12.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Kamis, 02.00 PM - 04.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Kamis, 07.00 PM - 09.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ 
+ {
+    "date": "Jumat, 10.00 AM - 12.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Jumat, 02.00 PM - 04.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Jumat, 07.00 PM - 09.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ 
+ {
+    "date": "Sabtu, 09.00 AM - 12.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Sabtu, 02.00 PM - 04.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Sabtu, 07.00 PM - 09.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },
+ 
+ {
+    "date": "Minggu, 10.00 AM - 12.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Minggu, 02.00 PM - 04.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ },{
+    "date": "Minggu, 07.00 PM - 09.00 PM",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+ }
+]

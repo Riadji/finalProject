@@ -1,0 +1,56 @@
+<%- include('../header/header.ejs') -%>
+
+<h2><%= tutor.Subject.subjectName %></h2>
+
+<table border="1">
+    <thead>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>City</th>
+        <th>Address</th>
+        <th>phoneNumber</th>
+        <th>Schedule</th>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><%= tutor.name %></td>
+            <td><%= tutor.gender %></td>
+            <td><%= tutor.City.cityName %></td>
+            <td><%= tutor.address %></td>
+            <td><%= tutor.phoneNumber %></td>
+
+            <td>
+            <% tutor.Schedules.forEach( schedule => { %>
+                <span><%= schedule.date %></span><br>
+            <% }) %>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+
+    </p>Berikut merupakan jadwal tutor yang sudah di booked</p>
+
+    <% tutor.Schedules.forEach( schedule => { %>
+        <% if(schedule.TutorSchedule.tutorStatus == false) { %>
+            <%= schedule.date %> <br>
+        <%}%>
+    <% }) %>
+<br>
+</div>
+
+
+<p>Select Schedule</p>
+
+<form action="/book-tutor/<%= tutor.id %>/student" method="POST">
+
+        <% tutor.Schedules.forEach( schedule => { %>
+            <% if(schedule.TutorSchedule.tutorStatus == true) { %>
+                <input type="checkbox" name="scheduleId" value="<%= schedule.id %>"><%= schedule.date %><br>
+            <%} %>
+        <% }) %>
+
+        <input type="submit" value="Submit">
+</form>

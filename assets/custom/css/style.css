@@ -1,0 +1,24 @@
+.actionButton {
+    margin-top: 5px;
+}
+
+/* Preview Tutor */
+.cardTutor {
+    border: 1px red solid;
+    width: 720px;
+    height: 500px;
+}
+
+.cardTutor .leftSide {
+    border: 1px black solid;
+    display: inline-block;
+    width: 250px;
+    height: 250px;;
+    float: left;
+}
+
+
+.cardTutor .leftSide .pageCard span:first-child {
+    display: inline-block;
+    width: 70px;
+}

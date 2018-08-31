@@ -1,0 +1,101 @@
+[{
+    "name": "Lance",
+    "gender": "Male",
+    "address": "5277 Nelson Place",
+    "CityId": "1",
+    "phoneNumber": "+7 954 674 8249",
+    "email": "lillesley0@quantcast.com",
+    "password": "wK94NmrCHeRK",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Montague",
+    "gender": "Male",
+    "address": "0785 Bluestem Park",
+    "CityId": "1",
+    "phoneNumber": "+63 215 184 8169",
+    "email": "mhryniewicki1@last.fm",
+    "password": "slJY1lchXjU",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Ryon",
+    "gender": "Male",
+    "address": "4481 Surrey Avenue",
+    "CityId": "2",
+    "phoneNumber": "+84 590 654 7854",
+    "email": "rcollick2@europa.eu",
+    "password": "Wtl5DnfbYSmG",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Norbert",
+    "gender": "Male",
+    "address": "273 Debs Terrace",
+    "CityId": "2",
+    "phoneNumber": "+504 794 576 8422",
+    "email": "nelven3@redcross.org",
+    "password": "A9GH1Wm",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Charlotta",
+    "gender": "Female",
+    "address": "079 Forest Crossing",
+    "CityId": "1",
+    "phoneNumber": "+63 828 271 0281",
+    "email": "cgoskar4@zdnet.com",
+    "password": "L6X4hQoI",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Dennie",
+    "gender": "Female",
+    "address": "42 Goodland Drive",
+    "CityId": "3",
+    "phoneNumber": "+51 547 645 5278",
+    "email": "dgosdin5@gnu.org",
+    "password": "yoOVjn",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Ranna",
+    "gender": "Female",
+    "address": "449 Tennyson Hill",
+    "CityId": "4",
+    "phoneNumber": "+1 320 340 2877",
+    "email": "rbartolomeoni6@facebook.com",
+    "password": "FRw4pG1",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Waylin",
+    "gender": "Male",
+    "address": "23859 Southridge Crossing",
+    "CityId": "5",
+    "phoneNumber": "+63 636 903 9274",
+    "email": "wkeaysell7@cmu.edu",
+    "password": "UyzOTqL",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Adora",
+    "gender": "Female",
+    "address": "89 Carey Park",
+    "CityId": "3",
+    "phoneNumber": "+63 871 426 2187",
+    "email": "aboays8@weather.com",
+    "password": "BqTqkA",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }, {
+    "name": "Benedikt",
+    "gender": "Male",
+    "address": "01315 Sage Parkway",
+    "CityId": "1",
+    "phoneNumber": "+63 915 331 6113",
+    "email": "bstoppard9@mapquest.com",
+    "password": "5bMcSS",
+    "createdAt": "2018-08-29T00:00:00Z",
+    "updatedAt": "2018-08-29T00:00:00Z"
+  }]
